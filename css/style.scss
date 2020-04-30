@@ -21,7 +21,7 @@ li {
     list-style: none;
 }
 
-//Navbar css
+//Navbar css#################################################################
 
 .navbar {
     position: relative;
@@ -33,11 +33,32 @@ li {
     // border: 1px solid black;
 }
 
+.navbar-content-active {
+    display: flex;
+    height: 60px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: black;
+    color: $text-primary-hover;
+    transition: 0.3s ease-in-out;
+    // border: 1px solid black;
+}
+
 .navbar-content {
     display: flex;
     height: 60px;
     width: 150px;
     align-items: center;
     justify-content: center;
+    background: white;
+    color: $text-primary;
     // border: 1px solid black;
+    &:hover {
+        margin-top: 20px;
+        background: black;
+        color: $text-primary-hover;
+        transition: 0.3s ease-in-out;
+    }
 }

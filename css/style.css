@@ -32,6 +32,25 @@ li {
   margin-right: 50px;
 }
 
+.navbar-content-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  background: black;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .navbar-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,5 +63,15 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: white;
+  color: #04030f;
+}
+
+.navbar-content:hover {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
