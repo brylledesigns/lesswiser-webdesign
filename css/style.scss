@@ -1,5 +1,6 @@
-$text-primary: rgb(4, 3, 15);
-$text-primary-hover: rgb(255, 255, 255);
+$text-primary: rgb(255, 255, 255);
+$secondary-color: rgb(0, 255, 255);
+$background: rgb(18, 21, 46);
 
 
 * {
@@ -10,6 +11,7 @@ $text-primary-hover: rgb(255, 255, 255);
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    background-color: $background;
 }
 
 a {
@@ -33,32 +35,50 @@ li {
     // border: 1px solid black;
 }
 
-.navbar-content-active {
+.navbar-content:focus {
     display: flex;
     height: 60px;
     width: 150px;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    background: black;
-    color: $text-primary-hover;
-    transition: 0.3s ease-in-out;
+    color: $secondary-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
     // border: 1px solid black;
+    &:hover {
+        border: 2px solid $secondary-color;
+        border-bottom-width: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: $secondary-color;
+    }
 }
 
 .navbar-content {
+    position: relative;
     display: flex;
     height: 60px;
     width: 150px;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: $background;
     color: $text-primary;
+    border: 2px solid $secondary-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 0px;
+    transition: border-bottom-width 0.2s ease-in-out;
     // border: 1px solid black;
     &:hover {
-        margin-top: 20px;
-        background: black;
-        color: $text-primary-hover;
-        transition: 0.3s ease-in-out;
+        border: 2px solid $secondary-color;
+        border-bottom-width: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: $secondary-color;
     }
 }

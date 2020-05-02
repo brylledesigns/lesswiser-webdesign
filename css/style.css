@@ -6,11 +6,12 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
+  background-color: #12152e;
 }
 
 a {
   text-decoration: none;
-  color: #04030f;
+  color: white;
 }
 
 li {
@@ -32,7 +33,7 @@ li {
   margin-right: 50px;
 }
 
-.navbar-content-active {
+.navbar-content:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,14 +45,24 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
-  background: black;
-  color: white;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  color: cyan;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+}
+
+.navbar-content:focus:hover {
+  border: 2px solid cyan;
+  border-bottom-width: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: cyan;
 }
 
 .navbar-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,15 +74,23 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
-  color: #04030f;
+  background: #12152e;
+  color: white;
+  border: 2px solid cyan;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 0px;
+  -webkit-transition: border-bottom-width 0.2s ease-in-out;
+  transition: border-bottom-width 0.2s ease-in-out;
 }
 
 .navbar-content:hover {
-  margin-top: 20px;
-  background: black;
-  color: white;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  border: 2px solid cyan;
+  border-bottom-width: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: cyan;
 }
 /*# sourceMappingURL=style.css.map */
