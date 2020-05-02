@@ -32,6 +32,7 @@ li {
     justify-content: flex-end;
     align-items: center;
     margin-right: 50px;
+    margin-top: 10px;
     // border: 1px solid black;
 }
 
@@ -64,7 +65,7 @@ li {
     width: 150px;
     align-items: center;
     justify-content: center;
-    background: $background;
+    background: transparent;
     color: $text-primary;
     border: 2px solid $secondary-color;
     border-top: none;
@@ -82,3 +83,37 @@ li {
         color: $secondary-color;
     }
 }
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 0px
+}
+
+.logo-container {
+    display: flex;
+    flex-grow: 5;
+    justify-content: flex-start;
+    height: auto;
+    // border: 1px solid white;
+}
+
+.body-content {
+    
+    margin-top: -70px;
+    margin-left: 0px;
+}
+
+.image-container {
+    height: 795px;
+    // border: 1px solid white;
+    overflow: hidden;
+    
+    .background-image {
+        background: linear-gradient(0deg, rgba(98,45,98,0) 4%, rgba(0,254,255,1) 100%);
+        width: 1550px;
+        z-index: initial;
+    }
+}
+
